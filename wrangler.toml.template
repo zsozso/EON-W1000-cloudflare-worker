@@ -1,0 +1,25 @@
+name = "eon-w1000-email-worker"
+main = "src/index.ts"
+compatibility_date = "2024-04-05"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+HA_URL = "https://ha.sajatdomain.hu:8123"
+UPDATE_INPUT_NUMBERS = "true"
+
+# HA_TOKEN should be set via `wrangler secret put HA_TOKEN`
+
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
+persist = true
+head_sampling_rate = 1

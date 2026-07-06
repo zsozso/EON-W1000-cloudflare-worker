@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+adatok.xlsx
+test_ha.mjs
+.gitignore
+.DS_Store
+.env
+.dev.vars
+README.md
+tsconfig.json
+package-lock.json

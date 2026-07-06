@@ -1,0 +1,9 @@
+node_modules/
+.wrangler/
+dist/
+adatok.xlsx
+.DS_Store
+.env
+.dev.vars
+wrangler.toml
+test_ha.mjs
